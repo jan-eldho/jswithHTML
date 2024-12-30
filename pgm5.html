@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sayHello()" >submit</button>
+    <!-- create a new button and add "how are you" in display on click -->
+     <br><br><br>
+     <h3 id="text"></h3>
+    <button onclick="printText()">print</button>
+    <!-- Change color of h3 elemnt to red on another button click -->
+     <br><br>
+     <button onclick="changeColor()">changeColor</button>
+</body>
+<script>
+    function sayHello() {
+        alert('hello')
+    }
+    function printText() {
+        text.innerHTML="how are you"
+        
+    }
+    function changeColor() {
+        text.style.color='red'
+        
+    }
+    
+</script>
+</html>

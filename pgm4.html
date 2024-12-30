@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hd">mearn course</h1>
+    <h3>Topics</h3>
+    <h5 class="test">MongoDB</h5>
+    <h5 class="test">EXpress</h5>
+    <h5 class="test">React</h5>
+    <h5 class="test">Angular</h5>
+    <h5 class="test">NodeJs</h5>
+    <p id="fullstack">full stack developer course</p>
+    <h2 id="testnew"></h2>
+    
+</body>
+<script>
+    var heading1=document.getElementById('hd')
+    console.log(heading1);
+    heading1.style.color='red'
+
+    var tempArr = document.getElementsByTagName('h3')
+    Array.from(tempArr).map(it=>it.style.color='blue')
+
+    var tempArr = document.getElementsByClassName('test')
+    Array.from(tempArr).forEach(item=>item.style.color='green')
+
+    //if we are using id, we can directly access the element by using id
+    fullstack.style.backgroundColor='yellow'
+
+    testnew.innerHTML='bom'
+
+    console.log(fullstack.innerHTML);
+    
+    fullstack.innerHTML += ' dummy'
+    
+
+</script>
+<!-- 1) change color the color of h1 by id to red
+2) change the color of h3 by tagnames
+3) change the color of h5 by class name -->
+</html>
