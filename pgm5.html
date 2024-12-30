@@ -14,6 +14,8 @@
     <!-- Change color of h3 elemnt to red on another button click -->
      <br><br>
      <button onclick="changeColor()">changeColor</button>
+     <br>
+     <button onclick="chnge('blue')">change</button>
 </body>
 <script>
     function sayHello() {
@@ -25,6 +27,10 @@
     }
     function changeColor() {
         text.style.color='red'
+        
+    }
+    function chnge(col) {
+        text.style.color=col
         
     }
     
