@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="add()">Add to local Storage</button>
+    <br><br>
+    <button onclick="get()">Get Item</button>
+    <h4 id="frst"></h4>
+    <button onclick="rmve()">removeitem</button>
+</body>
+<script>
+    function add() {
+        const name="todd";
+        localStorage.setItem("firstname",name)
+        
+    }
+    function get() {
+        var res=localStorage.getItem("firstname")
+        console.log(res);
+        
+        frst.innerHTML=res
+    }
+    function rmve() {
+        localStorage.removeItem("firstname")
+        
+    }
+
+</script>
+</html>

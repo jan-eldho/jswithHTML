@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="sayHello()" >submit</button>
+    <button onclick="sayHello()">submit</button>
     <!-- create a new button and add "how are you" in display on click -->
      <br><br><br>
      <h3 id="text"></h3>
@@ -16,6 +16,12 @@
      <button onclick="changeColor()">changeColor</button>
      <br>
      <button onclick="chnge('blue')">change</button>
+     <h4 onmouseover="chngebaground()" id="bgText" onmouseleave="chngbaground()">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem perferendis aliquam dolores ullam, eveniet hic ipsam facere quam eos accusantium fugiat dolorum, porro deleniti iusto cum eaque excepturi consequuntur harum?</h4>
+<br><br><h4 id="summ"></h4>
+<input type="text" placeholder="first number" id="first">
+<input type="text" pattern="second number" id="second">
+     <button onclick="sum()">sumof numbers</button>
+     
 </body>
 <script>
     function sayHello() {
@@ -33,6 +39,26 @@
         text.style.color=col
         
     }
+    function chngebaground() {
+        bgText.style.backgroundColor='orange'
+    }
+    function chngbaground() {
+        bgText.style.backgroundColor=''
+        
+    }
+    function sum() {
+    // Get the input values
+    let fir = parseFloat(first.value);
+    console.log(fir);
+
+    let sc = parseFloat(second.value);
+    console.log(sc);
+
+    // Calculate the sum and display the result
+    let result = fir + sc;
+    summ.innerHTML = result;
+}
+
     
 </script>
 </html>
