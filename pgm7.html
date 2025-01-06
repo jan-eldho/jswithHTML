@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="add()">Add to Session Storage</button>
+    <br><br>
+    <button onclick="get()">Get Item</button>
+    <h4 id="frst"></h4>
+    <button onclick="rmve()">removeitem</button>
+</body>
+<script>
+    function add() {
+       var student={
+        name:'kennth',
+        age:23,
+        location:"kakkanda"
+       } 
+       console.log("original data");
+       console.log(student);
+       var temp=JSON.stringify(student)
+       console.log("formated data");
+       console.log(temp);
+       sessionStorage.setItem("student_details",temp);
+    }
+    function get() {
+        var res=JSON.parse(sessionStorage.getItem('student_details'))
+        console.log(res.name);
+        
+        
+    }
+    function rmve() {
+        sessionStorage.removeItem("student_details")
+        
+    }
+    
+
+</script>
+</html>
